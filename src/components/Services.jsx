@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
-import {servicesData} from './Data'
+import {servicesData} from './Data';
+import logo from '../assets/save.png'
 
 function Services () {
         const[services, setServices] = useState([])
@@ -14,15 +15,19 @@ function Services () {
         fetchMyAPI()
 
     },[])
+
+    const addDefaultSrc = (e) =>{
+        e.target.src = logo
+    }
     return (
         <>
             <div>
                 {console.log(services)}
                 {services.map(element=>{
                     return (
-                        <div>
+                        <div key={element.id}>
                             <p>{element.name}</p>
-                            <img src={element.image}/>
+                            <img alt="" onError={addDefaultSrc} src={element.image} style={{width: "30px"}}/>
                         </div>
                     )
                 })}
