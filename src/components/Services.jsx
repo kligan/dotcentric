@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import {servicesData} from './Data';
-import logo from '../assets/save.png'
+import logo from '../assets/save.png';
 
 function Services () {
         const[services, setServices] = useState([])

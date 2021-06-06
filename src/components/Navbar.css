@@ -1,11 +1,24 @@
 .Navbar{
     height: 80px;
-    background: red;
     display: flex;
 }
 
 .Navbar .logo {
     flex: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.Navbar .logo img{
+    margin-left: 10vw;
+    width: 100px;
+}
+
+.contact {
+    background-color: #f56a75;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px 30px 20px 30px;
 }
 
 .Navbar .Navlinks {
@@ -13,43 +26,70 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: blue;
+    /*background: blue;*/
+
 }
 
 .Navbar .Navlinks .links{
-    max-height: 80px;
+    /*max-height: 80px;*/
 }
 
 .Navbar .Navlinks .links a{
    text-decoration: none;
+    color: black;
+    margin-left: 20px;
 }
 
 .dropdown{
     display: none;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 760px) {
+    .Navbar .Navlinks {
+        justify-content: flex-end;
+    }
+
+    .Navbar .logo img{
+        margin-left: 5vw;
+        width: 80px;
+    }
+
   .dropdown{
-      display: flex;
+      display: block;
+      align-items: flex-end;
+      margin: 20px;
   }
+
+  .dropdown img{
+    width: 25px;
+      height: 25px;
+  }
+
     .Navbar .Navlinks .links a{
         display: none;
+
     }
-    #hidden{
+    .NavlinksContent{
+        display: flex;
         position: absolute;
-        left: 0;
-        top: 80px;
-        height: 230px;
-        max-height: 230px;
+        top: 0;
+        width: 100%;
+    }
+
+    #hidden{
+        height: 100vh;
+        max-height: 100vh;
         width: 90%;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: #0e3657;
+        padding-top: 20px;
     }
     #hidden a{
         display: flex;
-        margin: 10px;
+        margin: 20px;
         font-size: 25px;
+        color: white;
     }
 }
