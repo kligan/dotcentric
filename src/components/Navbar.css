@@ -26,12 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background: blue;*/
 
-}
-
-.Navbar .Navlinks .links{
-    /*max-height: 80px;*/
 }
 
 .Navbar .Navlinks .links a{
@@ -71,9 +66,10 @@
     }
     .NavlinksContent{
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 100%;
+        z-index: 2;
     }
 
     #hidden{
@@ -85,6 +81,7 @@
         align-items: center;
         background-color: #0e3657;
         padding-top: 20px;
+
     }
     #hidden a{
         display: flex;

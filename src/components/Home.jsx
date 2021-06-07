@@ -9,7 +9,7 @@ function Home () {
                 <h3>{homeData.subtitle}</h3>
             </div>
             <div className="home-image">
-                <img src={homeData.home} />
+                <img alt="home" src={homeData.home} />
             </div>
             <div className="banner">
                 <h3>{homeData.bannerText}</h3>

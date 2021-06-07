@@ -7,3 +7,9 @@ body {
 h3,h1{
     color: #0e3757
 }
+
+.LoadingScreen{
+    margin-top: 15%;
+    width: 100%;
+    text-align: center;
+}

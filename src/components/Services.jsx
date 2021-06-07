@@ -45,7 +45,7 @@ function Services () {
                 </div>
                 <hr/>
                 <div className="quote">
-                    <img src={servicesData.speech}/>
+                    <img alt="speech" src={servicesData.speech}/>
                     <h3>{servicesData.quote}</h3>
                     <h6>{servicesData.author}</h6>
                 </div>

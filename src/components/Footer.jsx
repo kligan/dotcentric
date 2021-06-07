@@ -6,7 +6,7 @@ function Footer () {
         <>
             <div className="footer">
                 <div>
-                    <img src={footerData.footer} />
+                    <img alt="Footer" src={footerData.footer} />
                 </div>
                 <p>2021 <span>Dotcentric</span> Code Test - All rights reserved - Call 01234 432 123</p>
             </div>

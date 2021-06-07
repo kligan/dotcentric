@@ -56,12 +56,31 @@
 .quote h6{
     opacity: 0.4
 }
+@media only screen and (max-width: 1000px){
+    .card-details p{
+        left: 23vh;
+    }
+}
+@media only screen and (max-width: 900px){
+    .card-details p{
+        left: 21vh;
+    }
+}
+@media only screen and (max-width: 850px){
+    .card-details p{
+        left: 20vh;
+    }
+}
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 770px){
+    .card-details p{
+        left: 24vh;
+    }
+
     .services-content{
         width: 75%;
-
     }
+
     .services-content h3{
         margin-bottom: 100px;
     }
@@ -73,11 +92,19 @@
     .quote{
         width: 100%;
     }
-}
-
-@media only screen and (max-width: 450px){
     .services{
         display: block;
     }
+}
 
+@media (min-width: 400px) and (max-width: 415px) {
+    .card-details p{
+        left: 24.5vh;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .card-details p{
+        left: 26.5vh;
+    }
 }
