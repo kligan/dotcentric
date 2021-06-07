@@ -5,6 +5,7 @@ import home from '../assets/browser-image.png';
 import service from '../assets/service.png';
 import error from '../assets/error.png';
 import speech from '../assets/speach-marks.png';
+import footer from '../assets/footer.png';
 
 export const navData={
     brand,
@@ -34,8 +35,12 @@ export const servicesData = {
 export const contactData={
     error,
     title: "Contact About Awesomeness",
-    subtitle: "lorem ipsum dolor sit amet, consectetur adipiscing slit, set do eiusmod tempor consectetur adipiscing slit ",
+    subtitle: "lorem ipsum dolor sit amet, consectetur adipiscing slit, set do eiusmod tempor consectetur adipiscing slit consectetur adipiscing slit, set do eiusmod tempor slit ",
     validate: "Field cannot be empty",
     validateEmail: "Error: Please enter a valid email",
     validateTextarea: "Please enter as much detail as possible"
+}
+
+export const footerData={
+    footer
 }

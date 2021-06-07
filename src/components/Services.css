@@ -7,6 +7,7 @@
     line-height: 1.5em;
     height: 3em;
     opacity: 0.4;
+    margin-bottom: 100px;
 }
 
 .services{
@@ -16,11 +17,13 @@
 
 .card{
     width: 40vh;
-    /*background: red;*/
     margin-right: 10px;
     text-align: center;
 }
 
+.card-desc{
+    opacity: 0.4;
+}
 
 .card-details img{
     width: 100px;
@@ -38,7 +41,7 @@
 }
 
 .quote{
-    width: 90vh;
+    width: 70vh;
     margin: auto;
 }
 .quote img{
@@ -52,4 +55,29 @@
 
 .quote h6{
     opacity: 0.4
+}
+
+@media only screen and (max-width: 760px){
+    .services-content{
+        width: 75%;
+
+    }
+    .services-content h3{
+        margin-bottom: 100px;
+    }
+
+    .card{
+        margin: auto;
+    }
+
+    .quote{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .services{
+        display: block;
+    }
+
 }

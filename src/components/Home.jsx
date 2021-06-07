@@ -6,7 +6,7 @@ function Home () {
         <>
             <div className="home-content">
                 <h1>{homeData.title}</h1>
-                <p>{homeData.subtitle}</p>
+                <h3>{homeData.subtitle}</h3>
             </div>
             <div className="home-image">
                 <img src={homeData.home} />

@@ -4,12 +4,14 @@
 .contact-content{
     text-align: center;
     width: 60vh;
-    margin: auto;
+    margin: 0 auto 100px auto;
+    height: fit-content;
 }
 .contact-content h3{
     line-height: 1.5em;
     height: 3em;
     opacity: 0.4;
+
 }
 
 #contact-form{
@@ -74,7 +76,7 @@ textarea::-webkit-input-placeholder {
     .contact-content{
         text-align: center;
         width: 45vh;
-        margin: auto;
+        margin: 0 auto 100px auto;
     }
     #contact-form input, textarea{
         width: 40vh;

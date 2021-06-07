@@ -34,10 +34,10 @@ function Services () {
                                 <p>{service.id}</p>
                             </div>
                             <div>
-                                <h4>{service.name}</h4>
+                                <h3>{service.name}</h3>
                             </div>
-                            <div>
-                                <p>{service.description}</p>
+                            <div className="card-desc">
+                                <h3>{service.description}</h3>
                             </div>
                         </div>
                     )

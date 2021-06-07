@@ -1,0 +1,28 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    height: 50px;
+    background: #0e3657;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.footer span{
+    color: #f56a75;
+}
+
+.footer img{
+    width: 70px;
+    height: auto;
+}
+
+@media only screen and (max-width: 760px){
+    .footer{
+        display: block;
+        height: fit-content;
+        text-align: center;
+        padding: 30px;
+    }
+}
