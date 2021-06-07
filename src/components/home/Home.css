@@ -36,6 +36,7 @@
     padding: 5px 25px 10px 25px;
     background-color: #0e3757;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .banner h3{
@@ -46,21 +47,23 @@
     .home-content{
         width: 40vh;
     }
+
     .home-image img{
         width: 90%;
         height: auto;
-        /*margin-bottom: -23px;*/
     }
+
     .banner{
         display: block;
         text-align: center;
-        /*height: 250px;*/
         padding: 20px 0 20px 0;
     }
+
     .banner h3{
         width: 50%;
         margin: 10px auto 30px auto;
     }
+
     .banner button{
         width: 70%;
         text-align: left;

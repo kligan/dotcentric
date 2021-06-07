@@ -64,6 +64,7 @@ textarea::-webkit-input-placeholder {
     border-radius: 5px;
     display: flex;
     justify-content: flex-end;
+    cursor: pointer;
 }
 
 .success{

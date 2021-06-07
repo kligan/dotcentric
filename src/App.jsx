@@ -1,9 +1,9 @@
 import './App.css';
-import Navbar from './components/navbar/Navbar';
-import Home from './components/home/Home';
-import Services from './components/services/Services';
-import Contact from './components/contact/Contact';
-import Footer from './components/footer/Footer';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import {
     BrowserRouter as Router,
     Route,

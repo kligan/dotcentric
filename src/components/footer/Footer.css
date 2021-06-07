@@ -9,6 +9,10 @@
     margin-top: 50px;
 }
 
+.footer a{
+    text-decoration: none;
+}
+
 .footer span{
     color: #f56a75;
 }
