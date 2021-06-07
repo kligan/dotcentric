@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 import {servicesData} from './Data';
-import logo from '../assets/save.png';
 
 function Services () {
         const[services, setServices] = useState([])
@@ -11,28 +10,34 @@ function Services () {
             response = await response.json()
             setServices(response.services)
         }
-
         fetchMyAPI()
 
     },[])
 
     const addDefaultSrc = (e) =>{
-        e.target.src = logo
+        e.target.src = servicesData.service
     }
     return (
         <>
             <div>
-                {console.log(services)}
-                {services.map(element=>{
+                <h1>{servicesData.text}</h1>
+                <p>{servicesData.subText}</p>
+                {services.map(service=>{
                     return (
-                        <div key={element.id}>
-                            <p>{element.name}</p>
-                            <img alt="" onError={addDefaultSrc} src={element.image} style={{width: "30px"}}/>
+                        <div key={service.id}>
+                            <div>
+                                <img alt="" onError={addDefaultSrc} src={service.image} style={{width: "50px"}}/>
+                                <p>{service.id}</p>
+                            </div>
+                            <h4>{service.name}</h4>
+                            <p>{service.description}</p>
                         </div>
                     )
                 })}
-
-                <h1>{servicesData.text}</h1>
+                <hr/>
+                <p>{servicesData.quote}</p>
+                <h6>{servicesData.author}</h6>
+                <hr/>
             </div>
         </>
     )

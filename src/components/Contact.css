@@ -1,3 +1,90 @@
 .form-email{
-    border: solid 5px red;
+    border: solid 5px #d0021b !important;
+}
+.contact-content{
+    text-align: center;
+    width: 55vh;
+    margin: auto;
+}
+.contact-content h3{
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+}
+
+.contact-sub {
+    opacity: 0.4;
+}
+
+#contact-form{
+    width: fit-content;
+    margin: auto;
+}
+
+#contact-form input, textarea{
+    width: 50vh;
+    padding: 5px 0 10px 5px;
+    border: solid 4px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+input::-webkit-input-placeholder {
+    opacity: 0.4;
+}
+textarea::-webkit-input-placeholder {
+    opacity: 0.4;
+}
+
+.form-input{
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.form-input:after {
+    content: "*";
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: black;
+    z-index: 5;
+}
+
+.email-error-icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.submit-block{
+  display: flex;
+    justify-content:flex-end;
+}
+
+.submit{
+    color: white;
+    padding: 5px 25px 10px 25px;
+    background-color: #0e3757;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.success{
+    color: green;
+    text-align: center;
+}
+
+@media only screen and (max-width: 760px){
+    .contact-content{
+        text-align: center;
+        width: 45vh;
+        margin: auto;
+    }
+    #contact-form input, textarea{
+        width: 40vh;
+    }
+    .submit{
+        width: 100%;
+        display: block;
+    }
 }
