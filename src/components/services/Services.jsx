@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import {servicesData} from './Data';
+import {servicesData} from '../Data';
 import './Services.css'
 
 function Services () {

@@ -1,4 +1,4 @@
-import {footerData} from './Data';
+import {footerData} from '../Data';
 import './Footer.css';
 
 function Footer () {

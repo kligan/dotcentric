@@ -1,4 +1,4 @@
-import {homeData} from './Data';
+import {homeData} from '../Data';
 import './Home.css'
 
 function Home () {

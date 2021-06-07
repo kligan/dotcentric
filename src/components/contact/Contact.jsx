@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Contact.css';
-import {contactData} from "./Data";
+import {contactData} from "../Data";
 
 function Contact () {
 
