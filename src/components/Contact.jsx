@@ -84,7 +84,7 @@ function Contact () {
                         <p>Your Email</p>
                         <div className="form-input">
                             <input type="email" className={validEmail ? 'form-email' : null} aria-describedby="emailHelp" value={values.email} onChange={handleemail} placeholder="Please enter your email"/>
-                            <img alt="error" className= 'email-error-icon' src={validEmail ? contactData.error : null}/>
+                            <img alt="" className='email-error-icon' src={validEmail ? contactData.error : null}/>
                         </div>
                         <p>{validEmail ? <span style={{color:'red'}}>{contactData.validateEmail}</span> : null}</p>
                         <p>{submitted && !values.email ? <span style={{color:'red'}}>{contactData.validate}</span> : null}</p>
