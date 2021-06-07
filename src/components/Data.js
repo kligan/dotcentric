@@ -4,6 +4,7 @@ import menu from '../assets/menu.png';
 import home from '../assets/browser-image.png';
 import service from '../assets/service.png';
 import error from '../assets/error.png';
+import speech from '../assets/speach-marks.png';
 
 export const navData={
     brand,
@@ -23,7 +24,7 @@ export const homeData={
 }
 
 export const servicesData = {
-    service,
+    service, speech,
     text: "We Do Really Awesome Things",
     subText: "lorem ipsum dolor sit amet, consectetur adipiscing slit, set do eiusmod tempor consectetur adipiscing slit ",
     quote: "lorem ipsum dolor sit amet, consectetur adipiscing slit, set do eiusmod tempor consectetur adipiscing slit ",

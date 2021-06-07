@@ -1,0 +1,55 @@
+.services-content{
+    text-align: center;
+    width: 60vh;
+    margin: auto;
+}
+.services-content h3{
+    line-height: 1.5em;
+    height: 3em;
+    opacity: 0.4;
+}
+
+.services{
+    display: flex;
+    justify-content:center;
+}
+
+.card{
+    width: 40vh;
+    /*background: red;*/
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+.card-details img{
+    width: 100px;
+}
+
+.card-details{
+    position: relative;
+}
+
+.card-details p{
+    color: white;
+    position: absolute;
+    top: -12px;
+    left: 24.5vh;
+}
+
+.quote{
+    width: 90vh;
+    margin: auto;
+}
+.quote img{
+    width: 30px;
+    float: left;
+    margin-top: 5px;
+}
+.quote h3,h6{
+    margin-left: 50px;
+}
+
+.quote h6{
+    opacity: 0.4
+}

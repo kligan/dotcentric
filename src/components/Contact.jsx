@@ -61,7 +61,7 @@ function Contact () {
         <div>
             <div className="contact-content">
                 <h1>{contactData.title}</h1>
-                <h3 className="contact-sub">{contactData.subtitle}</h3>
+                <h3>{contactData.subtitle}</h3>
             </div>
             <div>
                 <form id="contact-form"  method="POST" onSubmit={handleSubmit}>

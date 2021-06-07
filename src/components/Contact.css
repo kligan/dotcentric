@@ -3,16 +3,12 @@
 }
 .contact-content{
     text-align: center;
-    width: 55vh;
+    width: 60vh;
     margin: auto;
 }
 .contact-content h3{
     line-height: 1.5em;
     height: 3em;
-    overflow: hidden;
-}
-
-.contact-sub {
     opacity: 0.4;
 }
 

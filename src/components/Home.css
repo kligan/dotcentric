@@ -1,6 +1,38 @@
+
+.home-content{
+    text-align: center;
+    width: 60vh;
+    margin: auto;
+}
+
+.home-image{
+    text-align: center;
+}
+
+.home-image img{
+    width: auto;
+    height: 35vw;
+    margin-bottom: -4px;
+}
+
+
 .banner{
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    height: 50px;
+    /*height: 50px;*/
     background-color: #f56a75;
+    color: white;
+    align-items: center;
+}
+
+.banner button{
+    color: white;
+    padding: 5px 25px 10px 25px;
+    background-color: #0e3757;
+    border-radius: 5px;
+}
+
+.banner h3{
     color: white;
 }

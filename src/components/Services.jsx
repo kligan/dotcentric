@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import {servicesData} from './Data';
+import './Services.css'
 
 function Services () {
         const[services, setServices] = useState([])
@@ -20,23 +21,34 @@ function Services () {
     return (
         <>
             <div>
-                <h1>{servicesData.text}</h1>
-                <p>{servicesData.subText}</p>
+                <div className="services-content">
+                    <h1>{servicesData.text}</h1>
+                    <h3>{servicesData.subText}</h3>
+                </div>
+                <div className="services">
                 {services.map(service=>{
                     return (
-                        <div key={service.id}>
-                            <div>
-                                <img alt="" onError={addDefaultSrc} src={service.image} style={{width: "50px"}}/>
+                        <div className="card" key={service.id}>
+                            <div className="card-details">
+                                <img alt="" onError={addDefaultSrc} src={service.image}/>
                                 <p>{service.id}</p>
                             </div>
-                            <h4>{service.name}</h4>
-                            <p>{service.description}</p>
+                            <div>
+                                <h4>{service.name}</h4>
+                            </div>
+                            <div>
+                                <p>{service.description}</p>
+                            </div>
                         </div>
                     )
                 })}
+                </div>
                 <hr/>
-                <p>{servicesData.quote}</p>
-                <h6>{servicesData.author}</h6>
+                <div className="quote">
+                    <img src={servicesData.speech}/>
+                    <h3>{servicesData.quote}</h3>
+                    <h6>{servicesData.author}</h6>
+                </div>
                 <hr/>
             </div>
         </>
