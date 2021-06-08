@@ -1,4 +1,3 @@
-import {contactData} from "../Data";
 
 function Form (props){
     const {submitted, valid, name, validate, phone, email, error, message} = props;

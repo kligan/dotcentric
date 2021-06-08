@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import {servicesData} from './Data';
 import './services/Services.css';
 import Description from './services/Description';
-import Service from './services/Services';
+import Service from './services/Service';
 import Quote from './services/Quote';
 import FetchAPI from './FetchAPI';
 
@@ -13,10 +13,13 @@ function Services () {
     useEffect( ()=>{
         FetchAPI('https://api.mocki.io/v2/561baaaa')
             .then((response)=>setServices(response.services))
+            .catch((error) => {
+                console.log(error)
+            });
     },[])
 
     const addDefaultSrc = (e) =>{
-        e.target.src = servicesData.service
+        e.target.src = servicesData.service;
     }
     return (
         <>
