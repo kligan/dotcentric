@@ -1,18 +1,18 @@
 import {useState, useEffect} from 'react';
 import {servicesData} from './Data';
-import './services/Services.css'
+import './services/Services.css';
+import Description from './services/Description';
+import Service from './services/Services';
+import Quote from './services/Quote';
+import FetchAPI from './FetchAPI';
 
 function Services () {
-        const[services, setServices] = useState([])
+        const[services, setServices] = useState([]);
+        const {text, subText, speech, quote, author} = servicesData;
 
     useEffect( ()=>{
-        async function fetchMyAPI() {
-            let response = await fetch('https://api.mocki.io/v2/561baaaa')
-            response = await response.json()
-            setServices(response.services)
-        }
-        fetchMyAPI()
-
+        FetchAPI('https://api.mocki.io/v2/561baaaa')
+            .then((response)=>setServices(response.services))
     },[])
 
     const addDefaultSrc = (e) =>{
@@ -21,34 +21,10 @@ function Services () {
     return (
         <>
             <div>
-                <div className="services-content">
-                    <h1>{servicesData.text}</h1>
-                    <h3>{servicesData.subText}</h3>
-                </div>
-                <div className="services">
-                {services.map(service=>{
-                    return (
-                        <div className="card" key={service.id}>
-                            <div className="card-details">
-                                <img alt="" onError={addDefaultSrc} src={service.image}/>
-                                <p>{service.id}</p>
-                            </div>
-                            <div>
-                                <h3>{service.name}</h3>
-                            </div>
-                            <div className="card-desc">
-                                <h3>{service.description}</h3>
-                            </div>
-                        </div>
-                    )
-                })}
-                </div>
+                <Description {...{text, subText}} />
+                <Service {...{services, addDefaultSrc}} />
                 <hr/>
-                <div className="quote">
-                    <img alt="speech" src={servicesData.speech}/>
-                    <h3>{servicesData.quote}</h3>
-                    <h6>{servicesData.author}</h6>
-                </div>
+                    <Quote {...{speech, quote, author}} />
                 <hr/>
             </div>
         </>
